@@ -3,7 +3,7 @@ function Linn(props) {
     <div className="linn">
       <h2>{props.name}</h2>
       <p>{props.riik}</p>
-      <img src={props.imgSrc} alt="Raamatu kaanepilt" />
+      <img src="./pildid/book.jpg" alt="Raamatu kaanepilt" />
     </div>
   );
 }

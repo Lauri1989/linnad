@@ -1,25 +1,17 @@
 import logo from './logo.svg';
-import './App.css';
+import './linnad.css';
+import Linn from './Linn';
+import pilt1 from './pildid/pilt1.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1> Minu raamatute loend!</h1>
+      <Linn name="Kevade" riik="Oskar Luts" imgSrc="pildid/pilt1.jpg" />
+      <Linn name="Aatomharjumused" riik="James Clear" imgSrc="pildid/pilt2.jpg" />
+      <Linn name="Nullpäev" riik="Ruth Ware" imgSrc="pildid/pilt3.jpg" />
     </div>
-  );
+  )
 }
-
 export default App;
+
